@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    /* background-color: #eeee; */
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.icon-cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.icon-cart svg {
+    width: 30px;
+}
+
+.icon-cart span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: red;
+    right: -20px;
+    bottom: -10px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+}
+
+.colitem {
+    padding: 20px;
+}
+
+.item {
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(238, 238, 230);
+}
+
+.item img {
+    width: 100%;
+    filter: drop-shadow(rgba(0, 0, 0, 0.6) 0px 50px 20px);
+}
+
+.item h2 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.price {
+    letter-spacing: 7px;
+    margin: 5px 0;
+}
+
+.addCart {
+    background-color: rgb(53, 52, 50);
+    color: rgb(238, 238, 238);
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 0.742);
+    color: #eee;
+    position: fixed;
+    top: 0;
+    display: none;
+    transition: all .3s ease-in-out;
+}
+
+
+
+.cartTab {
+    position: relative;
+    z-index: 100;
+    width: 1000px;
+    height: 600px;
+    padding: 0 15px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.wrapper.show{
+    display: block;
+    opacity: 1;
+}
+
+
+.image img{
+    width: 50px;
+}
+
+
+.cartTab h3 {
+    color: black;
+    font-weight: 300;
+    width: 100%;
+    /* height: 25px; */
+    padding: 0 10px;
+    margin: 5px 0;
+}
+
+
+
+.left-side{
+    width: 100%;
+    height: 60%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.left-side::-webkit-scrollbar{
+    width: 0;
+}
+
+.underline{
+    width: 100%;
+    height: 1px;
+    background-color: #555;
+    margin: 5px 0;
+}
+
+.right-side{
+    width: 100%;
+    /* border: 1px solid #555; */
+    border-radius: 10px;
+}
+
+.itemPrice{
+    font-size: 24px;
+    color: #555;
+}
+
+.cartItem{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cartImage{
+    width: 100px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    margin: 5px 25px 5px 10px;
+}
+
+.cartImage img{
+    width: 100%;
+    filter: drop-shadow(rgba(0, 0, 0, 0.6) 0px 50px 20px);
+}
+
+.name h3{
+    font-size: 20px !important;
+    color: #555; 
+    margin: 5px;
+}
+
+.name{
+    margin: 5px 40px 5px 15px;
+
+}
+
+.addItem{
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    border-radius: 2px;
+    padding:5px;
+    margin: 5px 50px 5px 15px;
+}
+
+.addItem div{
+    width: 20px;
+    color:#555;
+    margin: 0 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 2px 20px;
+}
+
+.addItem div:nth-child(odd){
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.TitleCart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    width: 100%;
+    
+}
+
+.TitleCart span{
+    display: block;
+    font-weight: 400;
+}
+
+.TitleCart span:nth-child(2){
+    cursor: pointer;
+}
+
+.right-side{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.right-side div{
+    margin: 10px 0;
+    font-size: 20px;
+}
+.right-side h1{
+    margin: 5px;
+    color: #444;
+    width: 100%;
+}
+
+.totalItems{
+    width: 50%;
+    color: #555;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+}
+
+.totalAmount{
+    width: 50%;
+    color: #555;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+}
+
+.right-side button{
+    width: 45%;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #555;
+}
+
+.closeButton{
+    background-color: rgb(238, 238, 238);
+}
+
+
+
+.buyButton{
+    background-color:rgb(238, 238, 238);
+}
+
+
+
+ .totalAmount{
+    text-align: right;
+    padding: 0 15px 0 0;
+}
+
+
+@media (max-width:1000px) {
+    
+.cartTab{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+}
+}
